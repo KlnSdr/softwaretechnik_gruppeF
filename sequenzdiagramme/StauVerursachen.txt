@@ -1,0 +1,29 @@
+title Stau verursachen
+
+actor user
+
+entryspacing 0.6
+user-> Simulation: createStau()
+activate Simulation
+Simulation -> Kreuzung: getKreuzung()
+activate Kreuzung
+Simulation <<--Kreuzung: Kreuzung
+deactivate Kreuzung
+Simulation ->Kreuzung: getAmpeln()
+activate Kreuzung
+Simulation <<--Kreuzung: Ampeln
+deactivate Kreuzung
+loop Ampeln
+Simulation -> Ampel: setFarbe(rot)
+activate Ampel
+Simulation <<--Ampel:
+deactivate Ampel
+end
+loop 1 bis 50
+Simulation -> *Verkehrsteilnehmer: create
+Simulation -> *Route: create
+Simulation ->Verkehrsteilnehmer: setRoute(Route)
+activate Verkehrsteilnehmer
+Simulation <<--Verkehrsteilnehmer:
+deactivate Verkehrsteilnehmer
+end
