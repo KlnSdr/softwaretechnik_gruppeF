@@ -1,0 +1,37 @@
+title Unfall verursachen
+
+actor User
+
+entryspacing 0.6
+User-> ﹕Simulation: 1﹕createUnfall()
+activate ﹕Simulation
+﹕Simulation -> ﹕Kreuzung: 2﹕getKreuzung()
+activate ﹕Kreuzung
+﹕Simulation <<--﹕Kreuzung: Kreuzung
+deactivate ﹕Kreuzung
+﹕Simulation ->﹕Kreuzung: 3﹕getAmpeln()
+activate ﹕Kreuzung
+﹕Simulation <<--﹕Kreuzung: Ampeln
+deactivate ﹕Kreuzung
+﹕Simulation -> ﹕Verkehrsteilnehmer_1: 4﹕updatePosition()
+activate ﹕Verkehrsteilnehmer_1
+﹕Simulation <<--﹕Verkehrsteilnehmer_1:
+deactivate ﹕Verkehrsteilnehmer_1
+﹕Simulation ->﹕Verkehrsteilnehmer_1: 5﹕setRoute()
+activate ﹕Verkehrsteilnehmer_1
+﹕Simulation <<--﹕Verkehrsteilnehmer_1:
+deactivate ﹕Verkehrsteilnehmer_1
+
+﹕Simulation -> ﹕Verkehrsteilnehmer_2: 6﹕updatePosition()
+activate ﹕Verkehrsteilnehmer_2
+﹕Simulation <<--﹕Verkehrsteilnehmer_2:
+deactivate ﹕Verkehrsteilnehmer_2
+﹕Simulation ->﹕Verkehrsteilnehmer_2: 7﹕setRoute()
+activate ﹕Verkehrsteilnehmer_2
+﹕Simulation <<--﹕Verkehrsteilnehmer_2:
+deactivate ﹕Verkehrsteilnehmer_2
+
+﹕Simulation -> ﹕Ampel: 8﹕setFarbe(grün)
+activate ﹕Ampel
+﹕Simulation <<--﹕Ampel:
+deactivate ﹕Ampel
