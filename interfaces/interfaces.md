@@ -1,7 +1,7 @@
 # Interfaces
 
 - Model
-  - Statische Komponenten
+  - statische Komponenten
     - Straßennetz
       -  getStraße(StraßenID)
       -  getKreuzung(KreuzungID)
@@ -23,7 +23,7 @@
       - getFarbe()
       - setFarbe()
       - getKreuzung()    
-  - Dynamische Komponenten
+  - dynamische Komponenten
     - Ampelsteuerung
       - getZustände(Kreuzung)
       - addAmpel(Ampel)
