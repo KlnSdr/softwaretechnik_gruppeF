@@ -1,0 +1,41 @@
+# Interfaces
+
+- Model
+  - Statische Komponenten
+    - Straßennetz
+      -  getStraße(StraßenID)
+      -  getKreuzung(KreuzungID)
+      -  getKreuzung(Koordinaten)
+      -  addStraße(Länge, Spuren, Start, Ende)
+      -  setStraßen(Straßen[])
+    - Straße
+      - getLänge()
+      - getAnzahlSpuren()
+      - getStart()
+      - getEnde()
+    - Kreuzung
+      - getStraßen()
+      - istKreisverkehr()
+      - getAmpeln()
+      - addAmpel(Steuerung)
+      - setAmpeln(Ampeln[])
+    - Ampel
+      - getFarbe()
+      - setFarbe()
+      - getKreuzung()    
+  - Dynamische Komponenten
+    - Ampelsteuerung
+      - getZustände(Kreuzung)
+      - addAmpel(Ampel)
+      - updateAmpel()
+    - Verkersteilnehmer:innen
+      - getPosition()
+      - updatePosition()
+      - getRoute()
+      - setRoute()
+    - Route
+      - getAnfang()
+      - getEnde()
+      - getLänge()
+      - setLänge()
+    
