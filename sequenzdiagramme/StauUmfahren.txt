@@ -1,0 +1,23 @@
+title Stau umfahren
+
+actor user
+user-> ﹕Simulation: stauUmfahren()
+activate ﹕Simulation
+﹕Simulation -> ﹕Verkehrsteilnehmer: getPosition()
+activate ﹕Verkehrsteilnehmer
+﹕Simulation <-- ﹕Verkehrsteilnehmer: Position
+deactivate ﹕Verkehrsteilnehmer
+﹕Simulation ->﹕Verkehrsteilnehmer: getRoute()
+activate ﹕Verkehrsteilnehmer
+﹕Simulation <-- ﹕Verkehrsteilnehmer: Route
+deactivate ﹕Verkehrsteilnehmer
+﹕Simulation -> alt﹕Route: getEnde()
+activate alt﹕Route
+﹕Simulation <-- alt﹕Route: Ziel
+deactivate alt﹕Route
+destroy alt﹕Route
+﹕Simulation -> *Neu﹕Route: create(aktuelle Pos., Ziel)
+﹕Simulation->﹕Verkehrsteilnehmer: setRoute
+activate ﹕Verkehrsteilnehmer
+﹕Simulation <-- ﹕Verkehrsteilnehmer:
+deactivate ﹕Verkehrsteilnehmer
