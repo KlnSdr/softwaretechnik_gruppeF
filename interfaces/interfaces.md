@@ -38,4 +38,8 @@
       - getEnde()
       - getLänge()
       - setLänge()
-    
+
+- Controller
+  - Simulation
+    - createStau()
+      
