@@ -52,7 +52,7 @@
         <mxCell id="E2Tey_hEMCp2Zjye5Bft-9" value="Route" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="120" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="E2Tey_hEMCp2Zjye5Bft-13" value="statische Komponenten" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="E2Tey_hEMCp2Zjye5Bft-13" value="Infrastruktur" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-370" y="180" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="E2Tey_hEMCp2Zjye5Bft-15" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
