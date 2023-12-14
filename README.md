@@ -50,3 +50,13 @@
     - stauUmfahren()
 
 
+### Sequenzdiagramme
+![unfall verursachen](sequenzdiagramme/UnfallVerursachen.png)
+
+![stau verursachen](sequenzdiagramme/StauVerursachen.png)
+
+![stau umfahren](sequenzdiagramme/Stauumfahren.png)
+
+### Git
+![contributions](contributions.png)
+![network](network.png)
